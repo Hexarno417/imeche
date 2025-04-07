@@ -701,7 +701,31 @@ These were parts that were essential when building the device. Since we used all
 \newpage
 \section{Manufacturing process}
 
+\subsection*{Prototype 1}
 
+Although our first prototype complied with all specifications, it had certain drawbacks that ultimately affected the overall performance, durability, and accuracy of the vehicle. After considered analysis, we decided to change and redesign certain parts to eliminate these problems. Design for Manufacturability (DFM) was a key area we focused on, changing materials and components we used. 
+
+\subsubsection*{Chassis}
+
+The chassis was made from 3mm plywood and laser cut to size. Plywood is lightweight and a relatively inexpensive material, so we thought it would be a good option. However, upon building the car, we discovered the plywood was ever so slightly warped. During testing, we found the car would steer off to one side, meaning it would not hit the required target on the wall. This was due to a multitude of reasons: wheel alignment was off, there was uneven weight distribution, different rolling resistance, and axle misalignment. This was an easy fix—the solution was to change the material from plywood to acrylic, eliminating any possibility of natural wood defects.
+
+\subsubsection*{Wheel Hub}
+
+The wheel hubs were also made from 3mm plywood and laser cut to size. The issue arose during mounting onto the chassis. We measured it by hand and glued it to the underside. This presented alignment issues as we relied on manual human precision and judgement. Even after careful measurement, the hubs were not perfectly aligned on the chassis, causing problems similar to those caused by warping. Using only glue as the joining method had its drawbacks, as the area is weak under stress and only provides strength in tension—not in shear or peel. Surface preparation and conditions directly impacted the placement of these hubs, especially as the chassis was warped. Furthermore, this method did not offer reusability or adjustability. Once glued, we couldn't change or undo the bond. Over time, under constant load, glue joints can deform slowly, reducing directional accuracy. Our solution to this problem was to design a new 3D printed wheel hub that slotted into the chassis from a laser cut section. This is held in place with a dowel-type joint, eliminating the need for glue or manual alignment. Simply slotting the hub into the chassis ensures perfect alignment without adhesive.
+
+\subsubsection*{Wheels}
+
+Just like the chassis, the wheels were laser cut from 3mm plywood. Similar problems occurred due to warping, affecting all wheels and causing the vehicle to veer off course. Additionally, we had to drill the mounting holes to connect the coupling connectors, again relying on human accuracy and judgement. This led to non-centralised connectors, causing eccentric rotation, imbalance, and uneven traction. We changed the material from 3mm plywood to 3mm acrylic to eliminate any chances of wood defects and laser cut the mounting holes to ensure the hubs were dead center.
+
+\subsubsection*{Wall Target}
+
+Accurately placing the vehicle a set distance from the wall and ensuring it was perfectly straight-on presented challenges. We couldn't always see if it was lined up with the target. To solve this, we added a centrally positioned laser LED diode to the front of the vehicle. From any distance, we could now see where it was aiming and ensure it would hit the target upon impact.
+
+\subsubsection*{Circuit}
+
+Our initial build incorporated a breadboard for the circuitry. A PCB was ready to be made, but due to problems with the machine, we were unable to get it printed. Switching to a PCB would make the design much more reliable: wires wouldn't fall out, connections wouldn't shift, and soldered joints provide more stability, especially on a moving vehicle. It would also be smaller and more compact, saving both weight and space. A PCB improves performance due to lower electrical noise and better signal integrity. The overall design would look cleaner and more professional. Furthermore, if we wanted to mass-produce the vehicle, a PCB would allow for efficient replication.
+
+\end{document}
 \newpage
 \section{Final design}
 \begin{center}
